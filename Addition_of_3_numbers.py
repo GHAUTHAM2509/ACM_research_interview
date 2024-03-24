@@ -83,9 +83,9 @@ def sumof2(number1,number2,carryin):
 ####################################### PROGRAM TO FIND THE SUM OF 3 NUMBERS.
 
 
-num_1 = int(input())
-num_2 = int(input())
-num_3 = int((input()))
+num_1 = int(input("number 1: "))
+num_2 = int(input("number 2: "))
+num_3 = int(input("number 3: "))
 def major_sum(num_1,num_2):
     num_1 = Binary(num_1) 
     num_2 = Binary(num_2)
@@ -115,7 +115,8 @@ new_num = sum([(2**((i)*ar1[i])*ar1[i]) for i in range(len(ar1))])
 ar2 = major_sum(new_num,num_3)
 ar2.reverse()
 FINAL_num = sum([(2**((i)*ar2[i])*ar2[i]) for i in range(len(ar2))])
-print(FINAL_num)
+print(f"SUM = {FINAL_num}")
+
 
 
 
