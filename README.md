@@ -134,6 +134,13 @@ div2
 ## Output
 ![image](https://github.com/GHAUTHAM2509/ACM_research_interview/assets/138212014/0f015624-c207-45d0-8f0f-d3d42c092b30)
 
+## Refences. 
+**Initial references:**
+1. https://youtu.be/-UrdExQW0cs?si=WgQBxnV_-1WqoyID
+2. https://youtu.be/-UrdExQW0cs?si=cNyF9hXM0Ci_eFdg
+3. https://youtu.be/mAgnIj0UXLY?si=EqNhYEB2dr88AL2X
+4. https://youtu.be/ZBaXPY_0TNI?si=YI-OhFjqIpkJM0BK
+5. https://youtu.be/nxIGNbcVKtA?si=ZiRBvd-Njh1YPlo1
 
 
 
