@@ -1,2 +1,2 @@
-## Pennylane Circuit functions
-# Three gates
+# Pennylane Circuit functions
+## Three gates
