@@ -75,10 +75,8 @@ def Binary(a):
 def sumof2(number1,number2,carryin):
 
     SUM = outputxor(outputxor(number1,number2),carryin)
-    #print(SUM)
 
     carryOUT = outputor(outputand(number1,number2),outputand(outputxor(number1,number2),carryin))
-    #print(carryOUT)
 
     return int(SUM),int(carryOUT)
 
