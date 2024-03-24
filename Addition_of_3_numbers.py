@@ -32,7 +32,6 @@ dev1 = qml.device('default.qubit', wires=2)
 @qml.qnode(dev1)
 def circuitor1(x=None, y=None):
     qml.BasisState(np.array([x,y]), wires=[0,1])
-    # qml.CNOT(wires=[1,0])
     return (qml.probs(wires=[0]))
 
 dev2 = qml.device('default.qubit', wires=2)
@@ -40,7 +39,6 @@ dev2 = qml.device('default.qubit', wires=2)
 @qml.qnode(dev2)
 def circuitor2(x=None, y=None):
     qml.BasisState(np.array([x,y]), wires=[0,1])
-    # qml.CNOT(wires=[1,0])
     return (qml.probs(wires=[1]))
 
 
@@ -71,7 +69,7 @@ def outputxor(a,b):
 def Binary(a):
     return bin(a)[2:]
 
-############################################## FULL ADDER
+################################################ FULL ADDER
 
 
 def sumof2(number1,number2,carryin):
