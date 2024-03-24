@@ -16,9 +16,9 @@ In the terminal once u run the program enter 3 numbers in 3 different lines and 
 ## Working
 **The program makes use of pennylane to create multiple devices and hence qubits to execute the code. <br>
 The 3 major logic circuits in the program are the AND gate , OR gate & XOR gate.<br>
-All the 3 gates take only 2 inputs and give out the logical output.
+All the 3 gates take only 2 inputs and give out the logical output.**
 <br><br><br>
-The major Function that handles the logic of the Program is the ***sumof2 function*** which is basically a full-adder logic circuit **
+**The major Function that handles the logic of the Program is the ***sumof2 function*** which is basically a full-adder logic circuit**
 
 ## Main Function. 
 **This function takes the input converts it to binary form sends it to the full adder bit by bit and the stoes the sum value in a array and carryout value in carryin for the next iteration.
@@ -30,8 +30,10 @@ sum([(2**((i)*ar1[i])*ar1[i]) for i in range(len(ar1))])
 
 ## Quantum Circuits
 
-### circuitor1
+### OR Gate and AND Gate.
 ```plaintext
+
+div1
 -----------
 |         |
 | q[0]    |-----[ Probability Measurement ]
@@ -45,12 +47,95 @@ sum([(2**((i)*ar1[i])*ar1[i]) for i in range(len(ar1))])
 |         |
 -----------
 
+div2
+-----------
+|         |
+| q[0]    |-----[ Ignored Measurement ]
+|         |
+-----------
+   |
+   |  
+-----------
+|         |
+| q[1]    |-----[ Probability Measurement ]
+|         |
+-----------
+
+```
+**The Measured values are the manipulated to get the desired result.**
+### XOR Gate.
+```plaintext
+-----------
+|         |
+| q[0]    |-----[ CNOT ]-----
+|         |                 |
+-----------                 |
+                            |
+-----------                 |
+|         |                 |
+| q[1]    |------------------[ Probability Measurement ]
+|         |
+-----------
+
+```
+**The combination of the 3 gates gives the full adder.**
+**SUM**
+```plaintext
+
+-----------
+| NUM1     |-----[ CNOT ]-----
+-----------                 |
+                            |
+-----------                 |
+| NUM2     |-----------------------[ CNOT ]-----
+-----------                                    |
+                                               |
+                                               |
+                                     -----------
+                                     | q[1]    |---[ SUM ]
+                                     -----------
+
+```
+**Carry**
+```plaintext
+-----------
+| NUm1    |-----[ CNOT ]-----                
+-----------                 |
+                            |
+-----------                 |               
+| NUM2    |-----------------------|---
+-----------    -----------        | ---AND                   
+               | carry   |--------|---
+               -----------        |
+                                  |---------┌───┐
+                                            ┤ X ├--o─--┐
+                                            └───┘  │   │
+-----------                       -----------------o---┼--- OR       
+| NUM1    |-----------------------|---                 |          -----------
+-----------    -----------        | ---AND             |----------| carry   |   
+               | NUM2    |--------|---                            ----------- 
+               -----------
+
+```
+
+## TRUTH TABLE
+
+| A | B | Cin | Sum | Cout |
+|---|---|-----|-----|------|
+| 0 | 0 |  0  |  0  |   0  |
+| 0 | 0 |  1  |  1  |   0  |
+| 0 | 1 |  0  |  1  |   0  |
+| 0 | 1 |  1  |  0  |   1  |
+| 1 | 0 |  0  |  1  |   0  |
+| 1 | 0 |  1  |  0  |   1  |
+| 1 | 1 |  0  |  0  |   1  |
+| 1 | 1 |  1  |  1  |   1  |
+
+## Output
 
 
 
-
-
-
-
+               
+                               
 
 
