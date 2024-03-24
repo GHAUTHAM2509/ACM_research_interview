@@ -142,8 +142,11 @@ div2
 4. https://youtu.be/ZBaXPY_0TNI?si=YI-OhFjqIpkJM0BK
 5. https://youtu.be/nxIGNbcVKtA?si=ZiRBvd-Njh1YPlo1
 
-
-
+**Pennylane**
+1. https://docs.pennylane.ai/en/stable/introduction/interfaces.html
+2. https://discuss.pennylane.ai/t/simple-xor-quantum-to-keras/669/3
+3. https://pennylane.ai/plugins/
+4. https://docs.quantum.ibm.com/start
 
 
                
