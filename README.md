@@ -132,6 +132,10 @@ div2
 | 1 | 1 |  1  |  1  |   1  |
 
 ## Output
+![image](https://github.com/GHAUTHAM2509/ACM_research_interview/assets/138212014/0f015624-c207-45d0-8f0f-d3d42c092b30)
+
+
+
 
 
 
